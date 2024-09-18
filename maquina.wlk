@@ -10,7 +10,7 @@ object maquina {
 
   method maximoValorDeProduccion() = cantidadProducidaPorDia.max()
 
-  method valoresDeProduccionPares() = cantidadProducidaPorDia.even()
+  method valoresDeProduccionPares() = cantidadProducidaPorDia.filter {produccion => produccion.even()}
 
   method produccionEsAcotada(n1, n2) = cantidadProducidaPorDia.all {produccion => n1 < produccion && n2 > produccion} 
 
@@ -23,6 +23,4 @@ object maquina {
   method ultimoValorDeProduccion() = cantidadProducidaPorDia.last()
 
   method cantidadProduccionesMayorALaPrimera() = cantidadProducidaPorDia.filter {produccion => cantidadProducidaPorDia[0] < produccion}.size()
-
-
   } 

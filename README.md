@@ -3,14 +3,23 @@
 Se nos pide modelar el registro de producción de una máquina. Debe registrarse la cantidad de piezas producidas por la máquina en cada día desde que se puso en operación.
 
 El registro debe ser capaz de responder las siguientes consultas:
+
 - `algunDiaSeProdujo(cantidad)`: indica si el registro incluye al menos un día en el que se produjo, exactamente, la cantidad indicada de piezas.
+
 - `maximoValorDeProduccion()`: el valor más alto de producción diaria incluido en el registro.
+
 - `valoresDeProduccionPares()`: los valores pares incluidos, en el mismo orden en que aparecen en el registro.
-- `produccionEsAcotada(n1,n2)`: indica si en cada día de que se tiene registro, la producción se encuentra entre los valores indicados.   
+
+- `produccionEsAcotada(n1,n2)`: indica si en cada día de que se tiene registro, la producción se encuentra entre los valores indicados.
+
 - `produccionesSuperioresA(cuanto)`: los valores de producción que superan el valor indicado, en el mismo orden en que aparecen en el registro.
+
 - `produccionesSumando(n)`: la serie que resulta de sumar el valor indicado a cada valor de producción diaria incluido en el registro. 
+
 - `totalProducido()`: el total de piezas producidas por la máquina, de acuerdo a la información incluida en el registro.
+
 - `ultimoValorDeProduccion()`: el último valor registrado. 
+
 - `cantidadProduccionesMayorALaPrimera()`: la cantidad de valores de producción diaria que superan a la producción indicada para el primer día de operación.
 
 A modo de ejemplo, se indica qué debe responder el registro de producción a varios mensajes, si incluye la producción de seis días con valores 43,18,49,62,33,39.
