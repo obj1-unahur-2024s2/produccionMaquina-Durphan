@@ -22,7 +22,7 @@ object maquina {
 
   method ultimoValorDeProduccion() = cantidadProducidaPorDia.last()
 
-  method cantidadProduccionesMayorALaPrimera() = cantidadProducidaPorDia.filter {produccion => cantidadProducidaPorDia[0] > produccion}.size()
+  method cantidadProduccionesMayorALaPrimera() = cantidadProducidaPorDia.filter {produccion => cantidadProducidaPorDia[0] < produccion}.size()
 
 
   } 
